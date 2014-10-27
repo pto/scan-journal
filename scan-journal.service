@@ -6,7 +6,7 @@ After=system-sshd.slice
 Requires=system-sshd.slice
 
 [Service]
-TimeoutStartSec=0
+Type=oneshot
 ExecStart=/root/scan-journal.sh
 
 [Install]

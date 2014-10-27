@@ -1,0 +1,9 @@
+[Unit]
+Description=Scan Journal Timer
+
+[Timer]
+OnUnitActiveSec=300
+OnBootSec=0
+
+[Install]
+WantedBy=multi-user.target
