@@ -1,0 +1,13 @@
+# /etc/systemd/system/scan-journal.service
+
+[Unit]
+Description=Scan Journal
+After=system-sshd.slice
+Requires=system-sshd.slice
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/root/scan-journal.sh
+
+[Install]
+WantedBy=multi-user.target
